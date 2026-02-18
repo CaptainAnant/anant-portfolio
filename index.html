@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anant Sharma | Full Stack Innovator</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          // TODO: Replace with your actual Public Key from EmailJS Account > API Keys
+          emailjs.init("service_1mhxjfn"); 
+       })();
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+    <div class="glow-orb mid-right"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">CONSOLE<span class="dot">.</span>ANANT</div>
+        <div class="nav-menu">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#journey" class="nav-link">Journey</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Work</a>
+            <a href="#certs" class="nav-link">Awards</a>
+            <a href="#contact" class="nav-btn">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="status-badge"><span class="pulse"></span> Aspirant Full Stack Developer</span>
+                <h1>Building <span class="gradient-text">Scalable</span><br> <span class="outline-text">Systems.</span></h1>
+                <p class="hero-desc">
+                    I am <strong>Anant Sharma</strong>. Currently, I am focused on mastering full-stack architectures and microservices while maintaining top academic performance in my Information Science engineering degree. My ongoing work involves building robust platforms and exploring the intersection of AI and web technologies to create seamless digital experiences.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View Projects <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="https://drive.google.com/file/d/1uoYF6s8brfQW-h3WKAVdeuHE35eBtB9e/view?usp=drive_link" target="_blank" class="btn-primary btn-outline">
+                        Download Resume <i class="fa-solid fa-download"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anant2005" target="_blank" class="btn-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div class="coding-profiles">
+                    <span>Visit Profiles:</span>
+                    <div class="profile-list">
+                        <a href="https://github.com/CaptainAnant" target="_blank" class="profile-tag glass-hover"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://leetcode.com/u/anant_2005_" target="_blank" class="profile-tag glass-hover"><i class="fa-solid fa-code"></i> LeetCode</a>
+                        <a href="https://www.hackerrank.com/profile/anant2005" target="_blank" class="profile-tag glass-hover"><i class="fa-brands fa-hackerrank"></i> HackerRank</a>
+                        <a href="https://www.boot.dev/u/anant2005" target="_blank" class="profile-tag glass-hover"><i class="fa-solid fa-fire"></i> Boot.dev</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="glass-profile-card">
+                    <div class="card-top-bar">
+                        <div class="mac-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <div class="availability-status"><span class="status-dot"></span> Open to Internships</div>
+                    </div>
+                    <div class="card-main"><h3>Anant Sharma</h3><p class="role-text">Aspirant Full Stack Developer</p></div>
+                    <div class="card-footer-info"><p>4+ Projects &nbsp;|&nbsp; 6+ Languages &nbsp;|&nbsp; 3rd Year Student (B.E.)</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="about-wrapper glass-panel">
+            <div class="about-image"><img src="me.jpeg" alt="Anant Sharma"></div>
+            <div class="about-content">
+                <h3 class="highlight-cyan">Tech Enthusiast & Innovator</h3>
+                <p>I am a passionate developer and aspiring engineer who thrives at the intersection of software engineering, AI, and innovation. With a strong foundation in Information Science, I have actively led technical initiatives like <strong>Synexus</strong>, fostering peer learning and community growth within my campus.</p>
+                <p>My journey is defined by a relentless curiosity for how complex systems work, driving me to build scalable solutions and explore emerging technologies. Beyond coding, I am a strategic planner and team player, always eager to collaborate on projects that push the boundaries of digital innovation and solve real-world problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey">
+        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+        <div class="timeline-wrapper">
+            <div class="timeline-track"></div>
+            <div class="timeline-entry">
+                <div class="timeline-dot ongoing"></div>
+                <div class="timeline-card glass-panel" data-tilt>
+                    <span class="badge-status">Ongoing</span>
+                    <h3>Bachelor of Engineering - Info Science</h3>
+                    <span class="institution">T. John Institute of Technology, Bangalore</span>
+                    <p>Currently pursuing degree in Information Science. Building foundation in Full Stack Development, Software and AI. <strong>(2023 - Present)</strong></p>
+                </div>
+            </div>
+            <div class="timeline-entry">
+                <div class="timeline-dot ongoing"></div>
+                <div class="timeline-card glass-panel" data-tilt>
+                    <span class="badge-status">Ongoing</span>
+                    <h3>Founder & Tech Lead</h3>
+                    <span class="institution">Synexus</span>
+                    <p>Leading the development of the college technical club management portal and organizing technical events. <strong>(2026)</strong></p>
+                </div>
+            </div>
+            <div class="timeline-entry">
+                <div class="timeline-dot completed"></div>
+                <div class="timeline-card glass-panel" data-tilt>
+                    <span class="badge-status">Completed</span>
+                    <h3>Pre-University Education</h3>
+                    <span class="institution">Science Stream</span>
+                    <p>Focused on PCM stream. Appeared for JEE and CUET exams to build a strong engineering foundation. <strong>(2021 - 2023)</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
+        
+        <div class="skill-category">
+            <h3 class="cat-header">Languages</h3>
+            <div class="skill-grid">
+                <div class="tech-card glass-panel" onclick="openSkillModal('C')"><i class="fa-solid fa-c icon-box"></i><span>C</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('Java')"><i class="fa-brands fa-java icon-box"></i><span>Java</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('Python')"><i class="fa-brands fa-python icon-box"></i><span>Python</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('Go')"><i class="fa-brands fa-golang icon-box"></i><span>Go</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('JavaScript')"><i class="fa-brands fa-js icon-box"></i><span>JavaScript</span></div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="cat-header">Web Development</h3>
+            <div class="skill-grid">
+                <div class="tech-card glass-panel" onclick="openSkillModal('React')"><i class="fa-brands fa-react icon-box"></i><span>React</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('NodeJS')"><i class="fa-brands fa-node icon-box"></i><span>NodeJS</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('HTML5')"><i class="fa-brands fa-html5 icon-box"></i><span>HTML5</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('CSS3')"><i class="fa-brands fa-css3-alt icon-box"></i><span>CSS3</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('Bootstrap')"><i class="fa-brands fa-bootstrap icon-box"></i><span>Bootstrap</span></div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="cat-header">Database & Tools</h3>
+            <div class="skill-grid">
+                <div class="tech-card glass-panel" onclick="openSkillModal('SQL')"><i class="fa-solid fa-database icon-box"></i><span>SQL</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('MongoDB')"><i class="fa-solid fa-leaf icon-box"></i><span>MongoDB</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('Git')"><i class="fa-brands fa-git-alt icon-box"></i><span>Git</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('Terminal')"><i class="fa-solid fa-terminal icon-box"></i><span>Terminal</span></div>
+                 <div class="tech-card glass-panel" onclick="openSkillModal('GitHub')"><i class="fa-brands fa-github icon-box"></i><span>GitHub</span></div>
+                <div class="tech-card glass-panel" onclick="openSkillModal('VS Code')"><i class="fa-solid fa-code icon-box"></i><span>VS Code</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="projects-wrapper">
+            
+            <div class="project-block glass-panel" onclick="openModal('modal1')">
+                <div class="project-thumb">
+                    <div class="thumb-overlay"><i class="fa-solid fa-expand"></i></div>
+                    <img src="images/tasteio.png" alt="theTasteio">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <h3>theTasteio</h3>
+                        <span class="status-tag updates">On-updates</span>
+                    </div>
+                    <p>Local college food fest event management</p>
+                    <div class="mini-tags"><span>React</span><span>Event</span></div>
+                </div>
+            </div>
+
+            <div class="project-block glass-panel" onclick="openModal('modal2')">
+                <div class="project-thumb">
+                    <div class="thumb-overlay"><i class="fa-solid fa-expand"></i></div>
+                    <img src="images/academicvibes.png" alt="Academic Vibes">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <h3>Academic Vibes</h3>
+                        <span class="status-tag updates">On-updates</span>
+                    </div>
+                    <p>Centralized student academic management</p>
+                    <div class="mini-tags"><span>Web</span><span>Platform</span></div>
+                </div>
+            </div>
+
+            <div class="project-block glass-panel" onclick="openModal('modal3')">
+                <div class="project-thumb">
+                    <div class="thumb-overlay"><i class="fa-solid fa-expand"></i></div>
+                    <img src="images/ai_personalitydetector.png" alt="AI Personality">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <h3>AI Personality</h3>
+                        <span class="status-tag completed">Completed</span>
+                    </div>
+                    <p>Social Media Personality Detector</p>
+                    <div class="mini-tags"><span>ML</span><span>NLP</span></div>
+                </div>
+            </div>
+
+            <div class="project-block glass-panel" onclick="openModal('modal4')">
+                <div class="project-thumb">
+                    <div class="thumb-overlay"><i class="fa-solid fa-expand"></i></div>
+                    <img src="images/synexus.png" alt="Synexus">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <h3>Synexus</h3>
+                        <span class="status-tag ongoing">Ongoing</span>
+                    </div>
+                    <p>Tech Club Management Portal</p>
+                    <div class="mini-tags"><span>Community</span><span>Web</span></div>
+                </div>
+            </div>
+
+            <div class="project-block glass-panel" onclick="openModal('modal5')">
+                <div class="project-thumb">
+                    <div class="thumb-overlay"><i class="fa-solid fa-expand"></i></div>
+                    <img src="images/kartlane.png" alt="KartLane">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <h3>KartLane</h3>
+                        <span class="status-tag ongoing">Ongoing</span>
+                    </div>
+                    <p>Hyperlocal E-Commerce Platform</p>
+                    <div class="mini-tags"><span>E-Commerce</span><span>App</span></div>
+                </div>
+            </div>
+
+            <div class="project-block glass-panel" onclick="openModal('modal6')">
+                <div class="project-thumb">
+                    <div class="thumb-overlay"><i class="fa-solid fa-expand"></i></div>
+                    <img src="https://via.placeholder.com/600x300/1a1a1a/ff5252?text=Simon+Says+Gameplay" alt="Simon Says">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <h3>Simon Says</h3>
+                        <span class="status-tag completed">Completed</span>
+                    </div>
+                    <p>Interactive Memory Sequence Game</p>
+                    <div class="mini-tags"><span>JS</span><span>Game</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certs">
+        <h2 class="section-title">Awards & <span class="gradient-text">Certifications</span></h2>
+        
+        <h3 class="cat-header"><i class="fa-solid fa-trophy" style="color: #ffd700;"></i> Achievements</h3>
+        <div class="cert-grid">
+            <div class="cert-card glass-panel">
+                <div class="cert-icon award"><i class="fa-solid fa-medal"></i></div>
+                <div class="cert-info"><h4>Department Topper (ISE)</h4><span>T. John Institute of Technology</span></div>
+            </div>
+            <div class="cert-card glass-panel">
+                <div class="cert-icon award"><i class="fa-solid fa-file-contract"></i></div>
+                <div class="cert-info"><h4>Published Paper "ClasSync"</h4><span>IJCRT</span></div>
+            </div>
+            <div class="cert-card glass-panel">
+                <div class="cert-icon award"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="cert-info"><h4>Cleared Internal Hackathon</h4><span>SIH 2025</span></div>
+            </div>
+            <div class="cert-card glass-panel">
+                <div class="cert-icon award"><i class="fa-solid fa-users-rays"></i></div>
+                <div class="cert-info"><h4>Participated in Vibeathon</h4><span>Replit</span></div>
+            </div>
+        </div>
+
+        <h3 class="cat-header" style="margin-top: 50px;"><i class="fa-solid fa-certificate" style="color: #00e5ff;"></i> Certifications</h3>
+        <div class="cert-grid">
+            <div class="cert-card glass-panel">
+                <div class="cert-icon cert"><i class="fa-brands fa-aws"></i></div>
+                <div class="cert-info"><h4>AWS Cloud Practitioner</h4><span>AWS</span><button class="view-cert" onclick="openCertModal('https://drive.google.com/file/d/1yAkmlqEwNlKsXoD3T2Og4mK1o6mvPW1K/view?usp=sharing', 'AWS Cloud Practitioner')">View Certificate</button></div>
+            </div>
+            <div class="cert-card glass-panel">
+                <div class="cert-icon cert"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="cert-info"><h4>Computer Networking</h4><span>Scaler</span><button class="view-cert" onclick="openCertModal('https://drive.google.com/file/d/1IszV2X4N8JHdwKYukpv1FL87eTqvfYkd/view?usp=sharing', 'Computer Networking')">View Certificate</button></div>
+            </div>
+            <div class="cert-card glass-panel">
+                <div class="cert-icon cert"><i class="fa-brands fa-hackerrank"></i></div>
+                <div class="cert-info"><h4>CSS Basics</h4><span>HackerRank</span><button class="view-cert" onclick="openCertModal('https://drive.google.com/file/d/1MGcsqlNypMoTCoi8ciGkpf3uMO8NQm50/view?usp=sharing', 'CSS Basics')">View Certificate</button></div>
+            </div>
+            <div class="cert-card glass-panel">
+                <div class="cert-icon cert"><i class="fa-solid fa-database"></i></div>
+                <div class="cert-info"><h4>SQL Basics</h4><span>HackerRank</span><button class="view-cert" onclick="openCertModal('https://drive.google.com/file/d/1F5OBv3bOK7Me8SWkdx_be2k8k_fGv6Bj/view?usp=sharing', 'SQL Basics')">View Certificate</button></div>
+            </div>
+            <div class="cert-card glass-panel">
+                <div class="cert-icon cert"><i class="fa-solid fa-plane"></i></div>
+                <div class="cert-info"><h4>Data Science Job Simulation</h4><span>British Airways</span><button class="view-cert" onclick="openCertModal('https://drive.google.com/file/d/1rs140BODWRQ1UVDTOyjKawEULfilQnxW/view?usp=sharing', 'Data Science Job Simulation')">View Certificate</button></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container glass-panel">
+            <div class="contact-text">
+                <h2>Ready for <br><span class="gradient-text">Takeoff?</span></h2>
+                <p>Whether you have a question, a project idea, or just want to say hi, my inbox is always open.</p>
+                <div class="contact-details">
+                    <div class="detail-item"><i class="fa-solid fa-envelope"></i><span>sharmaanant249@gmail.com</span></div>
+                    <div class="detail-item"><i class="fa-solid fa-location-dot"></i><span>Bengaluru, India</span></div>
+                </div>
+            </div>
+            <form class="contact-form" id="contact-form" onsubmit="sendMail(event)">
+                <div class="input-group">
+                    <input type="text" name="user_name" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="user_email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" required rows="4"></textarea>
+                    <label>Message</label>
+                </div>
+                
+                <div class="send-btn-wrapper">
+                    <button type="submit" class="send-btn">
+                        <span class="btn-text">Send Message</span>
+                        <i class="fa-solid fa-paper-plane plane-icon"></i>
+                    </button>
+                    <div class="mailbox-target">
+                        <i class="fa-solid fa-inbox"></i>
+                        <div class="notification-dot"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Anant Sharma. Built with <i class="fa-solid fa-heart" style="color: #ff2a6d"></i> and Code.</p>
+    </footer>
+
+    <div id="modal1" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button class="close-btn" onclick="closeModal('modal1')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-img-container"><img src="images/tasteio.png" alt="theTasteio Project"></div>
+            <div class="modal-header"><h2>theTasteio</h2><span>College Food Fest Management</span></div>
+            <div class="modal-body"><p>A comprehensive event management platform designed for local college food festivals. It handles vendor registration, stall allocation, and real-time event updates for students and visitors. Built to handle high traffic during fest days.</p><div class="modal-tags-box"><span>React</span><span>NodeJS</span><span>Event Management</span></div><a href="#" class="modal-btn"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </div>
+    </div>
+    <div id="modal2" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button class="close-btn" onclick="closeModal('modal2')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-img-container"><img src="images/academicvibes.png" alt="Academic Vibes"></div>
+            <div class="modal-header"><h2>Academic Vibes</h2><span>Student Academic Management</span></div>
+            <div class="modal-body"><p>A centralized platform for managing student academic life. Features include attendance tracking, assignment submissions, resource sharing, and a digital notice board to keep students connected with faculty.</p><div class="modal-tags-box"><span>Web Dev</span><span>Platform</span><span>Database</span></div><a href="#" class="modal-btn"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </div>
+    </div>
+    <div id="modal3" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button class="close-btn" onclick="closeModal('modal3')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-img-container"><img src="images/ai_personalitydetector.png" alt="AI Personality"></div>
+            <div class="modal-header"><h2>AI Personality Detector</h2><span>Social Media Analysis</span></div>
+            <div class="modal-body"><p>An AI-powered system that analyzes social media posts to detect personality traits. Using Natural Language Processing (NLP) and Machine Learning algorithms, it provides insights into user behavior and psychology based on text analysis.</p><div class="modal-tags-box"><span>Python</span><span>Machine Learning</span><span>NLP</span></div><a href="#" class="modal-btn"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </div>
+    </div>
+    <div id="modal4" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button class="close-btn" onclick="closeModal('modal4')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-img-container"><img src="images/synexus.png" alt="Synexus Project"></div>
+            <div class="modal-header"><h2>Synexus</h2><span>Tech Club Management Portal</span></div>
+            <div class="modal-body"><p>As the founder of the Synexus Technical Club, I developed this portal to streamline club activities. It features event registration, member directories, and an announcements system.</p><div class="modal-tags-box"><span>HTML/CSS</span><span>JavaScript</span><span>Backend Logic</span></div><a href="#" class="modal-btn"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </div>
+    </div>
+    <div id="modal5" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button class="close-btn" onclick="closeModal('modal5')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-img-container"><img src="images/kartlane.png" alt="KartLane Project"></div>
+            <div class="modal-header"><h2>KartLane</h2><span>Hyperlocal E-Commerce Platform</span></div>
+            <div class="modal-body"><p>KartLane connects local vendors with customers through a seamless digital marketplace. It solves the issue of inventory visibility for small shopkeepers by providing real-time tracking and vendor dashboards.</p><div class="modal-tags-box"><span>React</span><span>NodeJS</span><span>MongoDB</span><span>Express</span></div><a href="#" class="modal-btn"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </div>
+    </div>
+    <div id="modal6" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button class="close-btn" onclick="closeModal('modal6')"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-img-container"><img src="https://via.placeholder.com/800x400/1a1a1a/ff5252?text=Simon+Says+Gameplay" alt="Simon Says"></div>
+            <div class="modal-header"><h2>Simon Says Game</h2><span>Interactive Memory Challenge</span></div>
+            <div class="modal-body"><p>A classic memory sequence game built entirely with Vanilla JavaScript. Players must memorize and repeat sequences of flashing colors that get progressively longer with every level. Features include dynamic sequence generation, high-score tracking within the session, and responsive 3D button animations for an immersive experience.</p><div class="modal-tags-box"><span>JavaScript</span><span>DOM Manipulation</span><span>CSS Animations</span><span>HTML5</span></div><a href="#" class="modal-btn"><i class="fa-brands fa-github"></i> View on GitHub</a></div>
+        </div>
+    </div>
+
+    <div id="skill-modal" class="modal-overlay">
+        <div class="modal-content glass-panel" style="max-width: 500px;">
+            <button class="close-btn" onclick="closeSkillModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header"><h2 id="skill-title" style="color: #00e5ff; margin-bottom: 20px;">Skill Name</h2></div>
+            <div class="modal-body">
+                <div class="skill-detail-row"><span class="skill-label">Overview</span><p id="skill-desc" style="color: #ddd;"></p></div>
+                <div class="skill-detail-row"><span class="skill-label">Related Tools</span><p id="skill-tools" style="color: #aaa;"></p></div>
+                <div class="skill-detail-row"><span class="skill-label">Key Use Cases</span><p id="skill-use" style="color: #aaa;"></p></div>
+                <div class="skill-detail-row"><span class="skill-label">Industry Adoption</span><p id="skill-companies" style="color: #fff; font-weight: 500;"></p></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cert-modal" class="modal-overlay">
+        <div class="modal-content glass-panel" style="max-width: 900px;">
+            <button class="close-btn" onclick="closeCertModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header"><h2 id="cert-title">Certificate Name</h2></div>
+            <div class="cert-frame-container"><iframe id="cert-iframe" src="" allow="autoplay"></iframe></div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a id="cert-external-link" href="#" target="_blank" class="modal-btn">Open in New Tab <i class="fa-solid fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
