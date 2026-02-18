@@ -38,32 +38,45 @@ interactiveEls.forEach(el => {
     });
 });
 
-// Flying Paper Plane Logic + EmailJS
+// Flying Paper Plane Logic + EmailJS (Manual Data Handling)
 function sendMail(event) {
     event.preventDefault(); 
     
     const btn = document.querySelector('.send-btn');
-    const form = document.getElementById('contact-form');
     
+    // 1. Manually grab the values from the inputs
+    // These names must match the 'name' attributes in your HTML
+    const templateParams = {
+        from_name: document.querySelector('input[name="from_name"]').value,
+        email: document.querySelector('input[name="email"]').value,
+        message: document.querySelector('textarea[name="message"]').value
+    };
+
     if (btn.classList.contains('active')) return;
 
     btn.classList.add('active');
 
-    // Send Form Data (Replace with your actual Template ID & Public Key)
-    emailjs.sendForm('service_1mhxjfn', 'template_adzovx3', form)
+    // 2. Use emailjs.send() instead of sendForm()
+    // This sends the specific object 'templateParams' we created above
+    emailjs.send('service_1mhxjfn', 'template_adzovx3', templateParams)
         .then(() => {
             setTimeout(() => {
                 btn.classList.remove('active');
+                
                 const textSpan = btn.querySelector('.btn-text');
                 const originalText = textSpan.innerText;
                 textSpan.innerText = 'Sent!';
-                form.reset();
-                setTimeout(() => { textSpan.innerText = originalText; }, 2000);
+                
+                document.getElementById('contact-form').reset();
+                
+                setTimeout(() => {
+                    textSpan.innerText = originalText;
+                }, 2000);
             }, 2500);
         }, (error) => {
             console.error('FAILED...', error);
             btn.classList.remove('active');
-            alert('Failed to send message. Please try again.');
+            alert('Failed to send message. Check console for details.');
         });
 }
 
